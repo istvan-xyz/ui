@@ -5,6 +5,13 @@
     "tasks": [
         {
             "type": "shell",
+            "label": "Verify",
+            "detail": "Test and build",
+            "command": "npm test && npm run build",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
             "label": "Release major",
             "detail": "Release *.0.0",
             "command": "npm version major",
