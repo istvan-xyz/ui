@@ -19,6 +19,7 @@
         "*.svg",
         "*.tar.gz",
         "*.js",
+        "*.jsx",
         "*.d.ts",
         "*.d.ts.map",
         "node_modules",
