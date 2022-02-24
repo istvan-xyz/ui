@@ -14,7 +14,7 @@ const Button = ({
     primary?: true;
     secondary?: true;
     danger?: true;
-    disabled?: true;
+    disabled?: boolean;
 }) => {
     return (
         <button
