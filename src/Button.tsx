@@ -7,15 +7,18 @@ const Button = ({
     primary,
     secondary,
     danger,
+    disabled,
 }: {
     children: ReactNode;
-    onPress: () => void;
+    onPress?: () => void;
     primary?: true;
     secondary?: true;
     danger?: true;
+    disabled?: true;
 }) => {
     return (
         <button
+            disabled={disabled}
             className={clsx('btn', {
                 'btn-primary': primary,
                 'btn-secondary': secondary,
