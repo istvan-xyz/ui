@@ -1,16 +1,21 @@
 {
     "version": "0.2",
     "language": "en,de,fr,it",
-    "dictionaries": ["german", "corp-terms", "fonts"],
+    "dictionaries": [
+        "german",
+        "corp-terms",
+        "fonts"
+    ],
     "words": [
         "Antal",
+        "clsx",
         "codepaths",
+        "istvan",
         "István",
         "Parens",
         "postversion",
         "tsbuildinfo",
-        "tscache",
-        "clsx"
+        "tscache"
     ],
     "ignorePaths": [
         "*.snap",
