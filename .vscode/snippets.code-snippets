@@ -1,0 +1,16 @@
+{
+    "React Functional Component": {
+        "prefix": "component",
+        "body": [
+            "import { ReactNode } from 'react';",
+            "",
+            "const ${TM_FILENAME_BASE} = ({ children }: { children: ReactNode }) => {",
+            "    return <div className=\"${TM_FILENAME_BASE}\">{children}</div>;",
+
+            "};",
+            "",
+            "export default ${TM_FILENAME_BASE};"
+        ],
+        "description": "Functional React Component"
+    }
+}
