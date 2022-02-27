@@ -29,6 +29,15 @@
     background-color: var(--var-button-primary-color);
 }
 
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
 .modal {
     display: block;
     height: 100%;

@@ -2,10 +2,6 @@
 
 Core UI components
 
-```sh
-npm install bootstrap
-```
-
 In the entry point import the default styles.
 
 ```ts
