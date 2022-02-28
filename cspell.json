@@ -1,11 +1,16 @@
 {
     "version": "0.2",
     "language": "en,de,fr,it",
-    "dictionaries": ["german", "corp-terms", "fonts"],
+    "dictionaries": [
+        "german",
+        "corp-terms",
+        "fonts"
+    ],
     "words": [
         "Antal",
         "clsx",
         "codepaths",
+        "ghpages",
         "istvan",
         "István",
         "Parens",
