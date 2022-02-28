@@ -1,11 +1,7 @@
 {
     "version": "0.2",
     "language": "en,de,fr,it",
-    "dictionaries": [
-        "german",
-        "corp-terms",
-        "fonts"
-    ],
+    "dictionaries": ["german", "corp-terms", "fonts"],
     "words": [
         "Antal",
         "clsx",
@@ -30,6 +26,7 @@
         "node_modules",
         ".vscode",
         "package-lock.json",
-        "tscache"
+        "tscache",
+        "storybook-static"
     ]
 }

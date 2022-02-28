@@ -1,6 +1,9 @@
 import clsx from 'clsx';
-import type { ReactNode } from 'react';
+import { memo, ReactNode } from 'react';
 
+/**
+ * Simple button with onPress handler.
+ */
 const Button = ({
     children,
     onPress,
@@ -9,11 +12,29 @@ const Button = ({
     danger,
     disabled,
 }: {
+    /**
+     * Button label
+     */
     children: ReactNode;
+    /**
+     * Action to perform when button is pressed
+     */
     onPress?: () => void;
+    /**
+     * Primary button style
+     */
     primary?: true;
+    /**
+     * Secondary button style
+     */
     secondary?: true;
+    /**
+     * Destructive button style
+     */
     danger?: true;
+    /**
+     * Disabled button state
+     */
     disabled?: boolean;
 }) => {
     return (
@@ -31,4 +52,4 @@ const Button = ({
     );
 };
 
-export default Button;
+export default memo(Button);

@@ -5,6 +5,13 @@
     "tasks": [
         {
             "type": "shell",
+            "label": "Storybook",
+            "detail": "Run Storybook in development mode",
+            "command": "npm run storybook",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
             "label": "Verify",
             "detail": "Test and build",
             "command": "npm test && npm run build",
