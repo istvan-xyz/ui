@@ -4,6 +4,12 @@ This is a UI component library that meant to be a starting point for creating si
 
 The original concept was to just have a simple wrapper around Bootstrap, unfortunately Bootstrap has a lot of baggage and does not make extensive use of modern CSS features.
 
+Features include:
+
+-   support for dark mode
+-   ability to customize via CSS and CSS variables
+-   separate files per component, you only "pay" for the components you actually import
+
 # Getting started
 
 In the entry point import the default styles.
