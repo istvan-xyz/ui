@@ -1,6 +1,10 @@
 # UI
 
-Core UI components
+This is a UI component library that meant to be a starting point for creating simple React applications with a descent styling.
+
+The original concept was to just have a simple wrapper around Bootstrap, unfortunately Bootstrap has a lot of baggage and does not make extensive use of modern CSS features.
+
+# Getting started
 
 In the entry point import the default styles.
 
