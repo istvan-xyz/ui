@@ -1,7 +1,6 @@
 :root {
-    --var-font: 'Helvetica Neue';
-    --var-text-color: #aab2c0;
     --var-text-color-alt: #d7dae0;
+
     --var-widget-color: #babec4;
     --var-highlight-color: #dfe8f5;
     --var-foreground-color: #353b45;
@@ -12,6 +11,9 @@
     --var-alert-color: #ec04046b;
     --var-button-primary-color: rgb(14, 35, 158);
 
+    --ui-font: 'Helvetica Neue';
+    --ui-text-color: #aab2c0;
+
     --ui-accent-color: #29487c;
     --ui-value-positive-color: rgb(3, 146, 27);
     --ui-value-negative-color: rgb(197, 0, 0);
@@ -19,7 +21,7 @@
 
 .btn {
     padding: 0.2rem 0.6rem;
-    color: var(--var-text-color);
+    color: var(--ui-text-color);
     border: none;
     border-radius: 3px;
     cursor: pointer;
