@@ -22,7 +22,7 @@ jobs:
                   npm test
                   npm run build
                   NODE_OPTIONS=--openssl-legacy-provider npm run build-storybook
-                  NODE_OPTIONS=--openssl-legacy-provider npm run deploy-storybook
+                  NODE_OPTIONS=--openssl-legacy-provider npm run deploy-storybook -- --ci
               env:
                   CI: true
-                  NODE_ENV: development
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
