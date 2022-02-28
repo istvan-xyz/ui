@@ -21,7 +21,6 @@ jobs:
                   npm install
                   npm test
                   npm run build
-                  NODE_OPTIONS=--openssl-legacy-provider npm run build-storybook
                   NODE_OPTIONS=--openssl-legacy-provider npm run deploy-storybook -- --ci
               env:
                   CI: true
