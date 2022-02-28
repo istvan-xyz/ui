@@ -40,10 +40,10 @@ const Button = ({
     return (
         <button
             disabled={disabled}
-            className={clsx('btn', {
-                'btn-primary': primary,
-                'btn-secondary': secondary,
-                'btn-danger': danger,
+            className={clsx('Button', {
+                ButtonPrimary: primary,
+                ButtonSecondary: secondary,
+                ButtonDanger: danger,
             })}
             onClick={onPress}
         >

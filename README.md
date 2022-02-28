@@ -8,6 +8,12 @@ In the entry point import the default styles.
 import '@istvan.xyz/ui/style.css';
 ```
 
+Optionally import the page style which applies the style to the whole page:
+
+```ts
+import '@istvan.xyz/ui/page.css';
+```
+
 Add the following into the body tag after the React "root" element:
 
 ```html
