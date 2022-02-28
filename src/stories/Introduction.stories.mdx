@@ -1,1 +1,7 @@
-Documentation
+import { Meta, Description } from '@storybook/addon-docs/blocks';
+
+import Readme from '!raw-loader!../../README.md';
+
+<Meta title="Documentation/Readme" />
+
+<Description markdown={Readme} />
