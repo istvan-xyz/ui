@@ -6,6 +6,8 @@ The original concept was to just have a simple wrapper around Bootstrap, unfortu
 
 Features include:
 
+-   lightweight
+-   built with modern CSS features like flex-box and grids
 -   support for dark mode
 -   ability to customize via CSS and CSS variables
 -   separate files per component, you only "pay" for the components you actually import
@@ -24,7 +26,7 @@ Optionally import the page style which applies the style to the whole page:
 import '@istvan.xyz/ui/page.css';
 ```
 
-Add the following into the body tag after the React "root" element:
+Add the following into the body tag after the React "root" element to support modals:
 
 ```html
 <div id="modals"></div>
@@ -48,4 +50,12 @@ const MyComponent = () => {
 };
 
 export default MyComponent;
+```
+
+Add the following dependencies for icon support:
+
+```sh
+npm install --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
 ```

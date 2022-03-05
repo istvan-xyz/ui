@@ -27,6 +27,8 @@
 
     --ui-panel-color: #dadadb;
 
+    --ui-widget-background-color: #cfcfcf;
+
     --ui-value-positive-color: rgb(3, 146, 27);
     --ui-value-negative-color: rgb(197, 0, 0);
 }
@@ -42,6 +44,8 @@
         --ui-background-color: #282c34;
 
         --ui-panel-color: #212529;
+
+        --ui-widget-background-color: #353b45;
     }
 }
 
@@ -145,4 +149,22 @@
 .ButtonRow {
     display: flex;
     gap: 0.75rem;
+}
+
+.FormLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75rem;
+}
+
+.Select {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+
+    font-size: 1rem;
+
+    color: var(--ui-text-color);
+    background-color: var(--ui-widget-background-color);
 }
