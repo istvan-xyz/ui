@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    color: var(--ui-text-color);
     font-family: var(--ui-font);
     background-color: var(--ui-background-color);
 }

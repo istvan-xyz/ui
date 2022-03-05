@@ -11,21 +11,16 @@ const Modal = ({
     footer?: ReactNode;
 }) => {
     return createPortal(
-        <div
-            className="modal"
-            style={{ display: 'block' }}
-            tabIndex={-1}
-            role="dialog"
-        >
-            <div className="modal-dialog" role="document">
-                <div className="modal-content">
+        <div className="Modal" tabIndex={-1} role="dialog">
+            <div className="ModalDialog" role="document">
+                <div className="ModalContent">
                     {title && (
-                        <div className="modal-header">
-                            <h5 className="modal-title">{title}</h5>
+                        <div className="ModalHeader">
+                            <h5 className="ModalTitle">{title}</h5>
                         </div>
                     )}
-                    <div className="modal-body">{children}</div>
-                    {footer && <div className="modal-footer">{footer}</div>}
+                    <div className="ModalBody">{children}</div>
+                    {footer && <div className="ModalFooter">{footer}</div>}
                 </div>
             </div>
         </div>,

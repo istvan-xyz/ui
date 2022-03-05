@@ -4,7 +4,6 @@
     --var-widget-color: #babec4;
     --var-highlight-color: #dfe8f5;
     --var-foreground-color: #353b45;
-    --var-panel-color: #212529;
     --var-border-color: #181a1f;
     --var-page-background-color: #293241;
     --var-alert-color: #ec04046b;
@@ -26,6 +25,8 @@
 
     --ui-background-color: #fff;
 
+    --ui-panel-color: #dadadb;
+
     --ui-value-positive-color: rgb(3, 146, 27);
     --ui-value-negative-color: rgb(197, 0, 0);
 }
@@ -39,6 +40,8 @@
         --ui-hover-brightness: 1.2;
 
         --ui-background-color: #282c34;
+
+        --ui-panel-color: #212529;
     }
 }
 
@@ -71,36 +74,35 @@
     border-color: #6c757d;
 }
 
-.modal {
-    display: block;
-    height: 100%;
-    left: 0;
+.Modal {
+    position: absolute;
+
     outline: 0;
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;
+
+    margin: 0 auto;
+
     top: 0;
-    width: 100%;
-    z-index: 1055;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.modal-dialog {
-    margin: 0.5rem;
-    pointer-events: none;
-    position: relative;
+.ModalDialog {
     width: auto;
+    min-width: 400px;
+    margin: 0 auto;
 }
 
-@media (min-width: 576px) {
-    .modal-dialog {
-        margin: 1.75rem auto;
-        min-width: 500px;
-    }
-}
-
-.modal-content {
+.ModalContent {
     background-clip: padding-box;
-    background-color: #292929;
+    background-color: var(--ui-panel-color);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     display: flex;
@@ -111,18 +113,28 @@
     width: 100%;
 }
 
-.modal-body {
+.ModalHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.ModalTitle {
+    margin: 0;
+}
+
+.ModalBody {
     flex: 1 1 auto;
     padding: 1rem;
     position: relative;
-    background-color: #292929;
 }
 
-.modal-footer {
+.ModalFooter {
     align-items: center;
     border-bottom-left-radius: calc(0.3rem - 1px);
     border-bottom-right-radius: calc(0.3rem - 1px);
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #8d8f91;
     display: flex;
     flex-shrink: 0;
     flex-wrap: wrap;
@@ -132,5 +144,5 @@
 
 .ButtonRow {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
 }

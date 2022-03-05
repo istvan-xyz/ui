@@ -2,6 +2,8 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import '../../style.css';
 import '../../page.css';
 import Modal from '../Modal';
+import ButtonRow from '../ButtonRow';
+import Button from '../Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -16,8 +18,12 @@ const Template: ComponentStory<typeof Modal> = args => <Modal {...args} />;
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {
-    primary: true,
     title: 'Title',
     children: 'Example',
-    footer: 'Footer',
+    footer: (
+        <ButtonRow>
+            <Button secondary>Cancel</Button>
+            <Button primary>Save</Button>
+        </ButtonRow>
+    ),
 };
