@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import Button from './Button';
 import ButtonRow from './ButtonRow';
 import Modal from './Modal';
@@ -52,4 +52,4 @@ const UpdateNotifier = () => {
     );
 };
 
-export default UpdateNotifier;
+export default memo(UpdateNotifier);
