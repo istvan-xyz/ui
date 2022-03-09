@@ -157,7 +157,25 @@
     grid-gap: 0.75rem;
 }
 
+.VBoxLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.75rem;
+}
+
 .Select {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+
+    font-size: 1rem;
+
+    color: var(--ui-text-color);
+    background-color: var(--ui-widget-background-color);
+}
+
+.TextBox {
     display: inline-block;
     padding: 0.375rem 0.75rem;
     border-radius: 0.25rem;
