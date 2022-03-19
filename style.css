@@ -194,3 +194,21 @@
 .TextBox.TextBoxError {
     border-color: var(--var-alert-color);
 }
+
+.TableRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.TableHeaderCell {
+    background-color: var(--ui-widget-background-color);
+}
+
+.TableCell {
+    background-color: var(--ui-panel-color);
+}
+
+.TableHeaderCell,
+.TableCell {
+    padding: 0.75rem;
+}
