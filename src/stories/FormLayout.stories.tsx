@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import '../../style.css';
 import '../../page.css';
 import FormLayout from '../FormLayout';
-import Button from '../Button';
+import TextBox from '../TextBox';
 import Select from '../Select';
 
 export default {
@@ -20,29 +20,13 @@ Default.args = {
     children: (
         <>
             <label>Field label</label>
-            <input type="text" />
-            <label>Field label</label>
-            <select>
-                <option>A</option>
-                <option>B</option>
-                <option>c</option>
-            </select>
+            <TextBox />
             <label>Select</label>
             <Select>
                 <option>A</option>
                 <option>B</option>
                 <option>c</option>
             </Select>
-            <label>Field label</label>
-            <Button primary>Delete</Button>
-            <Select>
-                <option>A</option>
-                <option>B</option>
-                <option>c</option>
-            </Select>
-            <Button danger>Delete</Button>
-            <Button secondary>Cancel</Button>
-            <Button primary>Send</Button>
         </>
     ),
 };

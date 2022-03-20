@@ -8,3 +8,8 @@ body {
     font-family: var(--ui-font);
     background-color: var(--ui-background-color);
 }
+
+label {
+    display: flex;
+    align-items: center;
+}
