@@ -155,7 +155,10 @@
 
 .FormLayout {
     display: grid;
-    grid-template-columns: minmax(10rem, max-content) 1fr;
+    grid-template-columns: minmax(7.5rem, max-content) minmax(
+            min-content,
+            15rem
+        );
     grid-gap: 1.5rem;
 }
 
