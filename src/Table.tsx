@@ -17,8 +17,10 @@ const Table = ({
         </div>
         {body.map((row, index) => (
             <div key={index} className="TableRow">
-                {row.map(column => (
-                    <div className="TableCell">{column}</div>
+                {row.map((column, columnIndex) => (
+                    <div key={columnIndex} className="TableCell">
+                        {column}
+                    </div>
                 ))}
             </div>
         ))}
