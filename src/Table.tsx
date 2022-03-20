@@ -9,12 +9,14 @@ const Table = ({
 }) => (
     <div className="Table">
         <div className="TableRow">
-            {header.map(cell => (
-                <div className="TableHeaderCell">{cell}</div>
+            {header.map((cell, index) => (
+                <div key={index} className="TableHeaderCell">
+                    {cell}
+                </div>
             ))}
         </div>
-        {body.map(row => (
-            <div className="TableRow">
+        {body.map((row, index) => (
+            <div key={index} className="TableRow">
                 {row.map(column => (
                     <div className="TableCell">{column}</div>
                 ))}
