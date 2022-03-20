@@ -9,6 +9,11 @@ body {
     background-color: var(--ui-background-color);
 }
 
+a:link,
+a:visited {
+    color: var(--ui-text-color);
+}
+
 label {
     display: flex;
     align-items: center;
