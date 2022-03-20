@@ -222,3 +222,7 @@
 .TableCell {
     padding: 0.75rem;
 }
+
+.TableHeaderCell {
+    font-weight: bold;
+}
