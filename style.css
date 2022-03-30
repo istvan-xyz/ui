@@ -175,7 +175,7 @@
 
 .HBoxLayout {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, min-content));
     grid-gap: var(--ui-gap);
 }
 
