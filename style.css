@@ -173,6 +173,12 @@
     grid-gap: var(--ui-gap);
 }
 
+.HBoxLayout {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: var(--ui-gap);
+}
+
 .Select {
     display: inline-block;
     padding: 0.375rem 0.75rem;
