@@ -251,3 +251,17 @@
 .TableHeaderCell {
     font-weight: bold;
 }
+
+.ErrorBox {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: calc(var(--ui-gap) / 2);
+
+    padding: 0.75rem;
+    border-radius: var(--ui-border-radius);
+    background-color: rgb(146, 52, 52);
+}
+
+.ErrorBoxIcon {
+    align-self: center;
+}
