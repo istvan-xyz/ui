@@ -30,6 +30,7 @@
     --ui-background-color: #fff;
 
     --ui-panel-color: #dadadb;
+    --ui-panel-color-alt: #afacac;
 
     --ui-widget-background-color: #cfcfcf;
 
@@ -48,8 +49,10 @@
         --ui-background-color: #282c34;
 
         --ui-panel-color: #212529;
+        --ui-panel-color-alt: #252b31;
 
         --ui-widget-background-color: #353b45;
+        --ui-widget-background-color-alt: #353b45;
     }
 }
 
@@ -241,6 +244,10 @@
 
 .TableCell {
     background-color: var(--ui-panel-color);
+}
+
+.TableCell.TableCellRowEven {
+    background-color: var(--ui-panel-color-alt);
 }
 
 .TableHeaderCell,

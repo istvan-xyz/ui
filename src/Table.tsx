@@ -30,6 +30,7 @@ const Table = ({
                 <div
                     key={`${index}${columnIndex}`}
                     className={clsx('TableCell', {
+                        TableCellRowEven: index % 2,
                         TableCellBottomRight:
                             index === body.length - 1 && columnIndex === 0,
                         TableCellBottomLeft:
