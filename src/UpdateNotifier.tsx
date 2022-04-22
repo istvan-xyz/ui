@@ -16,8 +16,6 @@ const UpdateNotifier = () => {
                     return;
                 }
                 const response = await fetch(mainScriptUrl);
-                /* eslint-disable-next-line no-console */
-                console.log(response.status);
                 if (response.status === 404) {
                     clearTimeout(updateCheckInterval);
                     setIsUpToDate(false);
