@@ -1,17 +1,7 @@
 import clsx from 'clsx';
 import { memo, ReactNode } from 'react';
 
-/**
- * Simple button with onPress handler.
- */
-const Button = ({
-    children,
-    onPress,
-    primary,
-    secondary,
-    danger,
-    disabled,
-}: {
+export interface ButtonProps {
     /**
      * Button label
      */
@@ -36,7 +26,19 @@ const Button = ({
      * Disabled button state
      */
     disabled?: boolean;
-}) => {
+}
+
+/**
+ * Simple button with onPress handler.
+ */
+const Button = ({
+    children,
+    onPress,
+    primary,
+    secondary,
+    danger,
+    disabled,
+}: ButtonProps) => {
     return (
         <button
             disabled={disabled}
