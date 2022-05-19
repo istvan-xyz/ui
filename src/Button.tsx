@@ -1,18 +1,7 @@
 import clsx from 'clsx';
-import { ButtonHTMLAttributes, HTMLAttributes, memo, ReactNode } from 'react';
+import { memo, ReactNode } from 'react';
 
-/**
- * Simple button with onPress handler.
- */
-const Button = ({
-    children,
-    onPress,
-    primary,
-    secondary,
-    danger,
-    disabled,
-    type = 'button',
-}: {
+export interface ButtonProps {
     /**
      * Button label
      */
@@ -37,11 +26,19 @@ const Button = ({
      * Disabled button state
      */
     disabled?: boolean;
-    /**
-     * Type of button
-     */
-    type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
-}) => {
+}
+
+/**
+ * Simple button with onPress handler.
+ */
+const Button = ({
+    children,
+    onPress,
+    primary,
+    secondary,
+    danger,
+    disabled,
+}: ButtonProps) => {
     return (
         <button
             disabled={disabled}
@@ -51,7 +48,6 @@ const Button = ({
                 ButtonDanger: danger,
             })}
             onClick={onPress}
-            type={type}
         >
             {children}
         </button>
