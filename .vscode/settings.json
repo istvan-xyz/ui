@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "node_modules": true
+    },
+    "files.eol": "\n",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "explorer.fileNesting.enabled": true,
+    "cSpell.import": [],
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "node_modules": true
+    },
+    "search.exclude": {
+        "**/node_modules": true
+    }
+}
