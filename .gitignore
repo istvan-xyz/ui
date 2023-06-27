@@ -6,3 +6,4 @@
 /*.jsx
 /runtime
 /storybook-static
+.DS_Store
